@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) canadianize:(NSString *) str;
 - (void) respond:(NSString *) str;
 - (void) de_space_it:(NSString *) str;
+- (void) countWords:(NSString *) str;
+- (void) removePunctual:(NSString *) str;
 @end
 
 NS_ASSUME_NONNULL_END
