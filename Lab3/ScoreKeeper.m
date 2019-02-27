@@ -11,7 +11,6 @@
 @implementation ScoreKeeper
 - (void) logTheCurrentResult{
     float precentage = (float) (100 * _rightCount)/(_rightCount + _wrongCount);
-//    NSLog(@"That are %.1f percent!", precentage);
     NSLog(@"Score: %zd right, %zd wrong --- %.2f%%", _rightCount, _wrongCount, precentage);
 }
 @end
