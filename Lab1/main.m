@@ -16,9 +16,7 @@ int main(int argc, const char * argv[]) {
         fgets(inputChars, 255, stdin);
         printf("Your string is %s\n", inputChars);
         NSString *inputString = [NSString stringWithUTF8String:inputChars];
-    
         Functions *func = [Functions new];
-//        BOOL FLAG = NO;
         NSString *choice = @"0";
         while (![choice isEqualToString:@"q"]){
             if ([choice isEqualToString:@"1"]){
@@ -39,7 +37,7 @@ int main(int argc, const char * argv[]) {
                 [func removePunctual:inputString];
             }
             choice = [func promptUser];
-            NSLog(@"-----------------------------------------");
+            NSLog(@"---------------------------------------------");
         }
     return 0;
     }

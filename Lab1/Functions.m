@@ -10,10 +10,10 @@
 
 @implementation Functions
 - (NSString *) promptUser{
-    char inputChoice[3];
+    char inputChoice[10];
     NSLog(@"\nChoose one of these manipulating options ('q' to quit): \n1. Uppercase\n2. Lowercase\n3. Numberize\n4. Canadianize\n5. Respond\n6. De-Space-It\n7. Word count\n8. Punctual removal");
-    fgets(inputChoice, 2, stdin);
-    return [NSString stringWithUTF8String:inputChoice];
+    fgets(inputChoice, 10, stdin);
+    return [[NSString stringWithUTF8String:inputChoice] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     }
 - (void) uppercase:(NSString *) str{
     str = [str uppercaseString];
