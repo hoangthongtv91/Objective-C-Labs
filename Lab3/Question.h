@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AdditionQuestion : NSObject
+@interface Question : NSObject
 @property (assign) NSString * question;
 @property (assign) NSInteger answer;
 @end

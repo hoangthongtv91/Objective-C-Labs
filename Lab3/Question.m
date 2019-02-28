@@ -6,9 +6,9 @@
 //  Copyright © 2019 Thong Hoang Nguyen. All rights reserved.
 //
 
-#import "AdditionQuestion.h"
+#import "Question.h"
 
-@implementation AdditionQuestion
+@implementation Question
 - (instancetype) init{
     if (self == [super init]) {
         int random1 = arc4random_uniform(100) + 10;
@@ -16,7 +16,6 @@
         int random2 = arc4random_uniform(100) + 10;
         NSString *operand2 = [[NSString alloc] initWithFormat:@"%d",random2];
         _question = [NSString stringWithFormat:@"%@ %s %@ %s", operand1, "+", operand2, "= ?"];
-        
         _answer = random1 + random2;
     }
     return self;

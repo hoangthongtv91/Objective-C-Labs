@@ -1,8 +1,8 @@
 //
 //  ScoreKeeper.h
-//  Lab3
+//  Lab5
 //
-//  Created by Thong Hoang Nguyen on 2019-02-26.
+//  Created by Thong Hoang Nguyen on 2019-02-27.
 //  Copyright © 2019 Thong Hoang Nguyen. All rights reserved.
 //
 
@@ -14,7 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (assign) NSInteger rightCount;
 @property (assign) NSInteger wrongCount;
 - (void) logTheCurrentResultOut;
-
 @end
 
 NS_ASSUME_NONNULL_END

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AdditionQuestion.h"
+#import "Question.h"
 #import "InputHandler.h"
 #import "ScoreKeeper.h"
 int main(int argc, const char * argv[]) {
@@ -17,7 +17,7 @@ int main(int argc, const char * argv[]) {
         score.wrongCount = 0;
         NSLog(@"MATHS!");
         while (TRUE) {
-            AdditionQuestion *quest = [[AdditionQuestion alloc] init];
+            Question *quest = [[Question alloc] init];
             NSLog(@"%@", quest.question);
             NSString *inputString = [InputHandler promptUser];
             if ([inputString isEqualToString:@"quit"]) {
@@ -27,12 +27,11 @@ int main(int argc, const char * argv[]) {
             if (answer == quest.answer) {
                 NSLog(@"RIGHT!");
                 score.rightCount++;
-                [score logTheCurrentResult];
             }else{
                 NSLog(@"WRONG!");
                 score.wrongCount++;
-                [score logTheCurrentResult];
             }
+            [score logTheCurrentResultOut];
             
         }
     }
