@@ -17,6 +17,9 @@
 		BA0F285D2227579500890ECA /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0F285C2227579500890ECA /* QuestionManager.m */; };
 		BA51AD6C2224AAED006BC4EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA51AD6B2224AAED006BC4EA /* main.m */; };
 		BA51AD722224B2CE006BC4EA /* Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA51AD712224B2CE006BC4EA /* Functions.m */; };
+		BA6B3AF022288589001CA508 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6B3AEF22288589001CA508 /* main.m */; };
+		BA6B3AF622288A31001CA508 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6B3AF522288A31001CA508 /* Dice.m */; };
+		BA6B3AF922289B17001CA508 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6B3AF822289B17001CA508 /* GameController.m */; };
 		BA731CFE22260C5100117B61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA731CFD22260C5100117B61 /* main.m */; };
 		BAA0938422266A8200E10F7C /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA0938322266A8200E10F7C /* Question.m */; };
 		BAA09387222674A400E10F7C /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA09386222674A400E10F7C /* InputHandler.m */; };
@@ -67,6 +70,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		BA6B3AEB22288589001CA508 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		BA731CF922260C5100117B61 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -108,6 +120,12 @@
 		BA51AD6B2224AAED006BC4EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BA51AD702224B2CE006BC4EA /* Functions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Functions.h; sourceTree = "<group>"; };
 		BA51AD712224B2CE006BC4EA /* Functions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Functions.m; sourceTree = "<group>"; };
+		BA6B3AED22288589001CA508 /* Threelow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Threelow; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6B3AEF22288589001CA508 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA6B3AF422288A31001CA508 /* Dice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
+		BA6B3AF522288A31001CA508 /* Dice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
+		BA6B3AF722289B17001CA508 /* GameController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		BA6B3AF822289B17001CA508 /* GameController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 		BA731CFB22260C5100117B61 /* Lab3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab3; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA731CFD22260C5100117B61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BAA0938222266A8200E10F7C /* Question.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
@@ -161,6 +179,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BA6B3AEA22288589001CA508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA731CF822260C5100117B61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,6 +212,7 @@
 				BAC2D0A32224F50A00700E4F /* Lab2 */,
 				BA731CFC22260C5100117B61 /* Lab3 */,
 				BA0F284C2227412600890ECA /* Lab5 */,
+				BA6B3AEE22288589001CA508 /* Threelow */,
 				BA089E872220AAE40054F440 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -200,6 +226,7 @@
 				BAC2D0A22224F50A00700E4F /* Lab2 */,
 				BA731CFB22260C5100117B61 /* Lab3 */,
 				BA0F284B2227412600890ECA /* Lab5 */,
+				BA6B3AED22288589001CA508 /* Threelow */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -256,6 +283,18 @@
 				BA51AD712224B2CE006BC4EA /* Functions.m */,
 			);
 			path = Lab1;
+			sourceTree = "<group>";
+		};
+		BA6B3AEE22288589001CA508 /* Threelow */ = {
+			isa = PBXGroup;
+			children = (
+				BA6B3AEF22288589001CA508 /* main.m */,
+				BA6B3AF422288A31001CA508 /* Dice.h */,
+				BA6B3AF522288A31001CA508 /* Dice.m */,
+				BA6B3AF722289B17001CA508 /* GameController.h */,
+				BA6B3AF822289B17001CA508 /* GameController.m */,
+			);
+			path = Threelow;
 			sourceTree = "<group>";
 		};
 		BA731CFC22260C5100117B61 /* Lab3 */ = {
@@ -353,6 +392,23 @@
 			productReference = BA51AD692224AAED006BC4EA /* Lab1 */;
 			productType = "com.apple.product-type.tool";
 		};
+		BA6B3AEC22288589001CA508 /* Threelow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA6B3AF322288589001CA508 /* Build configuration list for PBXNativeTarget "Threelow" */;
+			buildPhases = (
+				BA6B3AE922288589001CA508 /* Sources */,
+				BA6B3AEA22288589001CA508 /* Frameworks */,
+				BA6B3AEB22288589001CA508 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Threelow;
+			productName = Threelow;
+			productReference = BA6B3AED22288589001CA508 /* Threelow */;
+			productType = "com.apple.product-type.tool";
+		};
 		BA731CFA22260C5100117B61 /* Lab3 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA731D0122260C5100117B61 /* Build configuration list for PBXNativeTarget "Lab3" */;
@@ -408,6 +464,9 @@
 					BA51AD682224AAED006BC4EA = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					BA6B3AEC22288589001CA508 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					BA731CFA22260C5100117B61 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -434,6 +493,7 @@
 				BAC2D0A12224F50A00700E4F /* Lab2 */,
 				BA731CFA22260C5100117B61 /* Lab3 */,
 				BA0F284A2227412600890ECA /* Lab5 */,
+				BA6B3AEC22288589001CA508 /* Threelow */,
 			);
 		};
 /* End PBXProject section */
@@ -479,6 +539,16 @@
 			files = (
 				BA51AD6C2224AAED006BC4EA /* main.m in Sources */,
 				BA51AD722224B2CE006BC4EA /* Functions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA6B3AE922288589001CA508 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6B3AF922289B17001CA508 /* GameController.m in Sources */,
+				BA6B3AF622288A31001CA508 /* Dice.m in Sources */,
+				BA6B3AF022288589001CA508 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,6 +762,24 @@
 			};
 			name = Release;
 		};
+		BA6B3AF122288589001CA508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NTBX6B6L7U;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BA6B3AF222288589001CA508 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NTBX6B6L7U;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		BA731CFF22260C5100117B61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -772,6 +860,15 @@
 			buildConfigurations = (
 				BA51AD6E2224AAED006BC4EA /* Debug */,
 				BA51AD6F2224AAED006BC4EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA6B3AF322288589001CA508 /* Build configuration list for PBXNativeTarget "Threelow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6B3AF122288589001CA508 /* Debug */,
+				BA6B3AF222288589001CA508 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
