@@ -19,7 +19,6 @@
     return [[NSString stringWithCString:inputChar encoding:NSUTF8StringEncoding] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
 - (void) printArray:(NSMutableArray *) myArray AndHeldCollection:(NSMutableArray *) heldCollection{
-//    NSLog(@"Current pont is %ld", [GameController calculateCurrentPointWithHeldCollection:heldCollection]);    
     NSLog(@"\nCurrent pont is: %ld\n%@ %@ %@ %@ %@",[GameController calculateCurrentPointWithHeldCollection:heldCollection], [myArray objectAtIndex:0], [myArray objectAtIndex:1], [myArray objectAtIndex:2], [myArray objectAtIndex:3], [myArray objectAtIndex:4]);
 }
 @end
