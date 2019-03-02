@@ -11,9 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GameController : NSObject
-- (void) rollWithArray:(NSMutableArray *) myArray AndHeldCollection:(NSMutableArray *) heldCollection AndHeldIndexArray:(NSMutableArray *) heldIndexArray;
+- (void) rollWithArray:(NSMutableArray *) myArray AndHeldCollection:(NSMutableArray *) heldCollection AndHeldIndexArray:(nonnull NSMutableArray *)heldIndexArray;
 - (void) holdWithArray:(NSMutableArray *) myArray AndHeldCollection:(NSMutableArray *) heldCollection AndHeldIndexArray:(NSMutableArray *) heldIndexArray;
-- (void) removeHeldCollection:(NSMutableArray *) heldCollection AndHeldIndexArray:(NSMutableArray *) heldIndexArray;
+- (void) removeHeldCollectionWithArray:(NSMutableArray *) myArray AndHeldCollection:(NSMutableArray *) heldCollection AndHeldIndexArray:(NSMutableArray *) heldIndexArray;
++ (NSInteger) calculateCurrentPointWithHeldCollection:(NSMutableArray *) heldCollection;
 @end
 
 NS_ASSUME_NONNULL_END

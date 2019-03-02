@@ -7,13 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "GameController.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Dice : NSObject
 - (NSString *) randomizeDie;
 + (NSString *) promptUser;
-- (void) printArray:(NSMutableArray *) array AndHeldCollection:(NSMutableArray *) heldCollection AndHeldIndexArray:(NSMutableArray *) heldIndexArray;
+- (void) printArray:(NSMutableArray *) myArray AndHeldCollection:(NSMutableArray *) heldCollection;
 @end
 
 NS_ASSUME_NONNULL_END

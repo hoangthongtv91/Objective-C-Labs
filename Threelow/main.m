@@ -17,7 +17,7 @@ int main(int argc, const char * argv[]) {
         NSMutableArray *heldCollection = [NSMutableArray new];
         NSMutableArray *heldIndexArray = [NSMutableArray new];
         while (true){
-            NSLog(@"What do you want to do ?");
+            NSLog(@"What do you want to do ?\n 'roll' to roll\n 'hold' to hold/unhold\n 'reset' to unhold all the die");
             NSString *input = [Dice promptUser];
             if ([input isEqualToString:@"roll"]){
                 [gameController rollWithArray:myArray AndHeldCollection:heldCollection AndHeldIndexArray:heldIndexArray];
@@ -26,9 +26,9 @@ int main(int argc, const char * argv[]) {
                 [gameController holdWithArray:myArray AndHeldCollection:heldCollection AndHeldIndexArray:heldIndexArray];
             }
             if ([input isEqualToString:@"reset"]){
-                [gameController removeHeldCollection:heldCollection AndHeldIndexArray:heldIndexArray];
+                [gameController removeHeldCollectionWithArray:myArray AndHeldCollection:heldCollection AndHeldIndexArray:heldIndexArray];
             }
-            [dice printArray:myArray AndHeldCollection:heldCollection AndHeldIndexArray:heldIndexArray];
+            [dice printArray:myArray AndHeldCollection:heldCollection];
         }
         
     }
