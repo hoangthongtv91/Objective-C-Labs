@@ -49,4 +49,10 @@
 + (NSArray *) getToppingsFromArray:(NSArray *) array{
     return array;
 }
++ (Pizza *)largePepperoni{
+    return [[Pizza alloc] initWithSize:PizzaSizeLarge AndToppings:@[@"tomato sauce", @"mozzeralla cheese", @"pepperonni"]];
+}
++ (Pizza *)meatLoversWithSize:(PizzaSize)size{
+    return [[Pizza alloc] initWithSize:size AndToppings:@[@"tomato sauce", @"mozzeralla", @"pepperonni", @"italian sausage", @"salami"]];
+}
 @end

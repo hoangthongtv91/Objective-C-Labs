@@ -17,6 +17,9 @@
 		BA0F285D2227579500890ECA /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0F285C2227579500890ECA /* QuestionManager.m */; };
 		BA51AD6C2224AAED006BC4EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA51AD6B2224AAED006BC4EA /* main.m */; };
 		BA51AD722224B2CE006BC4EA /* Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA51AD712224B2CE006BC4EA /* Functions.m */; };
+		BA6905E0222DD43400FAB81F /* FoodTruck.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6905DF222DD43400FAB81F /* FoodTruck.m */; };
+		BA6905E3222DD4D200FAB81F /* Cook.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6905E2222DD4D200FAB81F /* Cook.m */; };
+		BA6905E5222DD66600FAB81F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6905E4222DD66600FAB81F /* main.m */; };
 		BA6B3AF022288589001CA508 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6B3AEF22288589001CA508 /* main.m */; };
 		BA6B3AF622288A31001CA508 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6B3AF522288A31001CA508 /* Dice.m */; };
 		BA6B3AF922289B17001CA508 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6B3AF822289B17001CA508 /* GameController.m */; };
@@ -32,6 +35,16 @@
 		BACEC91E2227B46C00506048 /* DividendQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = BACEC91D2227B46C00506048 /* DividendQuestion.m */; };
 		BAE26FA022285F4B00F7613E /* QuestionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE26F9F22285F4B00F7613E /* QuestionFactory.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA6905F2222DE33D00FAB81F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA6905E7222DE33D00FAB81F /* PizzaRestaurant.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6001EC7D197B4EC300F97011;
+			remoteInfo = PizzaRestaurant;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		BA089E842220AAE40054F440 /* CopyFiles */ = {
@@ -62,6 +75,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		BA51AD672224AAED006BC4EA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		BA6905D5222DCDE600FAB81F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -120,6 +142,19 @@
 		BA51AD6B2224AAED006BC4EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BA51AD702224B2CE006BC4EA /* Functions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Functions.h; sourceTree = "<group>"; };
 		BA51AD712224B2CE006BC4EA /* Functions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Functions.m; sourceTree = "<group>"; };
+		BA6905D7222DCDE600FAB81F /* Lab9 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab9; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6905DE222DD43400FAB81F /* FoodTruck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodTruck.h; path = "iOS-Delegates-1-FoodTruck-master/Foodtruck/FoodTruck.h"; sourceTree = SOURCE_ROOT; };
+		BA6905DF222DD43400FAB81F /* FoodTruck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodTruck.m; path = "iOS-Delegates-1-FoodTruck-master/Foodtruck/FoodTruck.m"; sourceTree = SOURCE_ROOT; };
+		BA6905E1222DD4D200FAB81F /* Cook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cook.h; sourceTree = "<group>"; };
+		BA6905E2222DD4D200FAB81F /* Cook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cook.m; sourceTree = "<group>"; };
+		BA6905E4222DD66600FAB81F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "iOS-Delegates-1-FoodTruck-master/Foodtruck/main.m"; sourceTree = SOURCE_ROOT; };
+		BA6905E7222DE33D00FAB81F /* PizzaRestaurant.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = PizzaRestaurant.xcodeproj; sourceTree = "<group>"; };
+		BA6905EB222DE33D00FAB81F /* Pizza.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pizza.m; sourceTree = "<group>"; };
+		BA6905EC222DE33D00FAB81F /* Kitchen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kitchen.m; sourceTree = "<group>"; };
+		BA6905ED222DE33D00FAB81F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA6905EE222DE33D00FAB81F /* Pizza.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pizza.h; sourceTree = "<group>"; };
+		BA6905EF222DE33D00FAB81F /* Kitchen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kitchen.h; sourceTree = "<group>"; };
+		BA6905F0222DE33D00FAB81F /* PizzaRestaurant-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PizzaRestaurant-Prefix.pch"; sourceTree = "<group>"; };
 		BA6B3AED22288589001CA508 /* Threelow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Threelow; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6B3AEF22288589001CA508 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BA6B3AF422288A31001CA508 /* Dice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
@@ -179,6 +214,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BA6905D4222DCDE600FAB81F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA6B3AEA22288589001CA508 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -213,6 +255,8 @@
 				BA731CFC22260C5100117B61 /* Lab3 */,
 				BA0F284C2227412600890ECA /* Lab5 */,
 				BA6B3AEE22288589001CA508 /* Threelow */,
+				BA6905D8222DCDE600FAB81F /* Lab9 */,
+				BA6905E6222DE33D00FAB81F /* iOS-Student-PizzaRestaurant-master */,
 				BA089E872220AAE40054F440 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -227,6 +271,7 @@
 				BA731CFB22260C5100117B61 /* Lab3 */,
 				BA0F284B2227412600890ECA /* Lab5 */,
 				BA6B3AED22288589001CA508 /* Threelow */,
+				BA6905D7222DCDE600FAB81F /* Lab9 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -283,6 +328,48 @@
 				BA51AD712224B2CE006BC4EA /* Functions.m */,
 			);
 			path = Lab1;
+			sourceTree = "<group>";
+		};
+		BA6905D8222DCDE600FAB81F /* Lab9 */ = {
+			isa = PBXGroup;
+			children = (
+				BA6905E4222DD66600FAB81F /* main.m */,
+				BA6905DE222DD43400FAB81F /* FoodTruck.h */,
+				BA6905DF222DD43400FAB81F /* FoodTruck.m */,
+				BA6905E1222DD4D200FAB81F /* Cook.h */,
+				BA6905E2222DD4D200FAB81F /* Cook.m */,
+			);
+			path = Lab9;
+			sourceTree = "<group>";
+		};
+		BA6905E6222DE33D00FAB81F /* iOS-Student-PizzaRestaurant-master */ = {
+			isa = PBXGroup;
+			children = (
+				BA6905E7222DE33D00FAB81F /* PizzaRestaurant.xcodeproj */,
+				BA6905EA222DE33D00FAB81F /* PizzaRestaurant */,
+			);
+			path = "iOS-Student-PizzaRestaurant-master";
+			sourceTree = SOURCE_ROOT;
+		};
+		BA6905E8222DE33D00FAB81F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA6905F3222DE33D00FAB81F /* PizzaRestaurant */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA6905EA222DE33D00FAB81F /* PizzaRestaurant */ = {
+			isa = PBXGroup;
+			children = (
+				BA6905EB222DE33D00FAB81F /* Pizza.m */,
+				BA6905EC222DE33D00FAB81F /* Kitchen.m */,
+				BA6905ED222DE33D00FAB81F /* main.m */,
+				BA6905EE222DE33D00FAB81F /* Pizza.h */,
+				BA6905EF222DE33D00FAB81F /* Kitchen.h */,
+				BA6905F0222DE33D00FAB81F /* PizzaRestaurant-Prefix.pch */,
+			);
+			path = PizzaRestaurant;
 			sourceTree = "<group>";
 		};
 		BA6B3AEE22288589001CA508 /* Threelow */ = {
@@ -392,6 +479,23 @@
 			productReference = BA51AD692224AAED006BC4EA /* Lab1 */;
 			productType = "com.apple.product-type.tool";
 		};
+		BA6905D6222DCDE600FAB81F /* Lab9 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA6905DD222DCDE600FAB81F /* Build configuration list for PBXNativeTarget "Lab9" */;
+			buildPhases = (
+				BA6905D3222DCDE600FAB81F /* Sources */,
+				BA6905D4222DCDE600FAB81F /* Frameworks */,
+				BA6905D5222DCDE600FAB81F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lab9;
+			productName = Lab9;
+			productReference = BA6905D7222DCDE600FAB81F /* Lab9 */;
+			productType = "com.apple.product-type.tool";
+		};
 		BA6B3AEC22288589001CA508 /* Threelow */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA6B3AF322288589001CA508 /* Build configuration list for PBXNativeTarget "Threelow" */;
@@ -464,6 +568,9 @@
 					BA51AD682224AAED006BC4EA = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					BA6905D6222DCDE600FAB81F = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					BA6B3AEC22288589001CA508 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -485,6 +592,12 @@
 			mainGroup = BA089E7D2220AAE40054F440;
 			productRefGroup = BA089E872220AAE40054F440 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BA6905E8222DE33D00FAB81F /* Products */;
+					ProjectRef = BA6905E7222DE33D00FAB81F /* PizzaRestaurant.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				BA089E852220AAE40054F440 /* ObjectiveCLabs */,
@@ -494,9 +607,20 @@
 				BA731CFA22260C5100117B61 /* Lab3 */,
 				BA0F284A2227412600890ECA /* Lab5 */,
 				BA6B3AEC22288589001CA508 /* Threelow */,
+				BA6905D6222DCDE600FAB81F /* Lab9 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BA6905F3222DE33D00FAB81F /* PizzaRestaurant */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = PizzaRestaurant;
+			remoteRef = BA6905F2222DE33D00FAB81F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA089E822220AAE40054F440 /* Sources */ = {
@@ -539,6 +663,16 @@
 			files = (
 				BA51AD6C2224AAED006BC4EA /* main.m in Sources */,
 				BA51AD722224B2CE006BC4EA /* Functions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA6905D3222DCDE600FAB81F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA6905E0222DD43400FAB81F /* FoodTruck.m in Sources */,
+				BA6905E5222DD66600FAB81F /* main.m in Sources */,
+				BA6905E3222DD4D200FAB81F /* Cook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -762,6 +896,24 @@
 			};
 			name = Release;
 		};
+		BA6905DB222DCDE600FAB81F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NTBX6B6L7U;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BA6905DC222DCDE600FAB81F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NTBX6B6L7U;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		BA6B3AF122288589001CA508 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -860,6 +1012,15 @@
 			buildConfigurations = (
 				BA51AD6E2224AAED006BC4EA /* Debug */,
 				BA51AD6F2224AAED006BC4EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA6905DD222DCDE600FAB81F /* Build configuration list for PBXNativeTarget "Lab9" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6905DB222DCDE600FAB81F /* Debug */,
+				BA6905DC222DCDE600FAB81F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -20,9 +20,7 @@ int main(int argc, const char * argv[])
         
         Kitchen *restaurantKitchen = [Kitchen new];
         
-        while (TRUE) { 
-            // Loop forever
-            
+        while (TRUE) {
             NSLog(@"\n> ");
             char str[100];
             fgets (str, 100, stdin);
@@ -31,12 +29,15 @@ int main(int argc, const char * argv[])
             inputString = [inputString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
             
             NSLog(@"Input was %@", inputString);
-            
-            // Take the first word of the command as the size, and the rest as the toppings
-            NSArray *commandWords = [inputString componentsSeparatedByString:@" "];
-            NSArray *toppingsArray = [commandWords subarrayWithRange:NSMakeRange(1, ([commandWords count] - 1))];
-            Pizza *pizza = [restaurantKitchen makePizzaWithSize:[Pizza sizeFromString:[commandWords objectAtIndex:0]] toppings:toppingsArray];
-            NSLog(@"\nHERE YOU GO:\nPizza with size is: %@, and toppings is: %@",[pizza sizeInWord], [pizza toppings]);
+            if ([inputString isEqualToString:@"pepperoni"] || [inputString isEqualToString:@"meatlover"]) {
+                Pizza *pizza = [restaurantKitchen makePizzaWithCombination:inputString];
+                NSLog(@"\nHERE YOU GO:\nPizza with size is: %@, and toppings is: %@",[pizza sizeInWord], [pizza toppings]);
+            }else{
+                NSArray *commandWords = [inputString componentsSeparatedByString:@" "];
+                NSArray *toppingsArray = [commandWords subarrayWithRange:NSMakeRange(1, ([commandWords count] - 1))];
+                Pizza *pizza = [restaurantKitchen makePizzaWithSize:[Pizza sizeFromString:[commandWords objectAtIndex:0]] toppings:toppingsArray];
+                NSLog(@"\nHERE YOU GO:\nPizza with size is: %@, and toppings is: %@",[pizza sizeInWord], [pizza toppings]);
+            }
             
         }
 
