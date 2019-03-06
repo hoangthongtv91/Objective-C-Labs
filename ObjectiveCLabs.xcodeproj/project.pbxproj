@@ -23,9 +23,6 @@
 		BA473673222F839F0007E664 /* ApplePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = BA473672222F839F0007E664 /* ApplePaymentService.m */; };
 		BA51AD6C2224AAED006BC4EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA51AD6B2224AAED006BC4EA /* main.m */; };
 		BA51AD722224B2CE006BC4EA /* Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA51AD712224B2CE006BC4EA /* Functions.m */; };
-		BA6905E0222DD43400FAB81F /* FoodTruck.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6905DF222DD43400FAB81F /* FoodTruck.m */; };
-		BA6905E3222DD4D200FAB81F /* Cook.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6905E2222DD4D200FAB81F /* Cook.m */; };
-		BA6905E5222DD66600FAB81F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6905E4222DD66600FAB81F /* main.m */; };
 		BA6B3AF022288589001CA508 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6B3AEF22288589001CA508 /* main.m */; };
 		BA6B3AF622288A31001CA508 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6B3AF522288A31001CA508 /* Dice.m */; };
 		BA6B3AF922289B17001CA508 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6B3AF822289B17001CA508 /* GameController.m */; };
@@ -160,11 +157,6 @@
 		BA51AD702224B2CE006BC4EA /* Functions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Functions.h; sourceTree = "<group>"; };
 		BA51AD712224B2CE006BC4EA /* Functions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Functions.m; sourceTree = "<group>"; };
 		BA6905D7222DCDE600FAB81F /* Lab9 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab9; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA6905DE222DD43400FAB81F /* FoodTruck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FoodTruck.h; path = "iOS-Delegates-1-FoodTruck-master/Foodtruck/FoodTruck.h"; sourceTree = SOURCE_ROOT; };
-		BA6905DF222DD43400FAB81F /* FoodTruck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FoodTruck.m; path = "iOS-Delegates-1-FoodTruck-master/Foodtruck/FoodTruck.m"; sourceTree = SOURCE_ROOT; };
-		BA6905E1222DD4D200FAB81F /* Cook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cook.h; sourceTree = "<group>"; };
-		BA6905E2222DD4D200FAB81F /* Cook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cook.m; sourceTree = "<group>"; };
-		BA6905E4222DD66600FAB81F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "iOS-Delegates-1-FoodTruck-master/Foodtruck/main.m"; sourceTree = SOURCE_ROOT; };
 		BA6B3AED22288589001CA508 /* Threelow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Threelow; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6B3AEF22288589001CA508 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BA6B3AF422288A31001CA508 /* Dice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
@@ -272,7 +264,6 @@
 				BA731CFC22260C5100117B61 /* Lab3 */,
 				BA0F284C2227412600890ECA /* Lab5 */,
 				BA6B3AEE22288589001CA508 /* Threelow */,
-				BA6905D8222DCDE600FAB81F /* Lab9 */,
 				BA25375F222F4AC00080826F /* Lab10 */,
 				BA089E872220AAE40054F440 /* Products */,
 			);
@@ -364,18 +355,6 @@
 				BA51AD712224B2CE006BC4EA /* Functions.m */,
 			);
 			path = Lab1;
-			sourceTree = "<group>";
-		};
-		BA6905D8222DCDE600FAB81F /* Lab9 */ = {
-			isa = PBXGroup;
-			children = (
-				BA6905E4222DD66600FAB81F /* main.m */,
-				BA6905DE222DD43400FAB81F /* FoodTruck.h */,
-				BA6905DF222DD43400FAB81F /* FoodTruck.m */,
-				BA6905E1222DD4D200FAB81F /* Cook.h */,
-				BA6905E2222DD4D200FAB81F /* Cook.m */,
-			);
-			path = Lab9;
 			sourceTree = "<group>";
 		};
 		BA6B3AEE22288589001CA508 /* Threelow */ = {
@@ -694,9 +673,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA6905E0222DD43400FAB81F /* FoodTruck.m in Sources */,
-				BA6905E5222DD66600FAB81F /* main.m in Sources */,
-				BA6905E3222DD4D200FAB81F /* Cook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
