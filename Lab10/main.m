@@ -11,10 +11,11 @@
 #import "PaypalPaymentService.h"
 #import "StripePaymentService.h"
 #import "AmazonPaymentService.h"
+#import "ApplePaymentService.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         int ran = arc4random_uniform(900) + 100;
-        NSLog(@"Thank you for shopping at Acme.com Your total today is %d. Please select your payment method:1: Paypal, 2: Stripe, 3: Amazon", ran);
+        NSLog(@"Thank you for shopping at Acme.com Your total today is %d. Please select your payment method:1: Paypal, 2: Stripe, 3: Amazon, 4: Apple", ran);
         char str [100];
         fgets(str, 100, stdin);
         int inputValue = [[[NSString stringWithUTF8String:str] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] intValue];
@@ -30,11 +31,13 @@ int main(int argc, const char * argv[]) {
             case 3:
                 paymentGateway.paymentDelegate = [AmazonPaymentService new];
                 break;
-            default:
+            case 4:
+                paymentGateway.paymentDelegate = [ApplePaymentService new];
                 break;
+            default:
+                NSLog(@"Invalid input");
         }
-        
-        [paymentGateway.paymentDelegate processPaymentAmount:ran];
+        [paymentGateway processPaymentAmount:ran];
     }
     return 0;
 }

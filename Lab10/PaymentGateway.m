@@ -9,4 +9,12 @@
 #import "PaymentGateway.h"
 
 @implementation PaymentGateway
+- (void) processPaymentAmount:(NSInteger) amount{
+    if ([_paymentDelegate canProcessPayment]) {
+        [_paymentDelegate processPaymentAmount:amount];
+    }else{
+        NSLog(@"Sorry the process was not successful");
+    }
+    
+}
 @end
