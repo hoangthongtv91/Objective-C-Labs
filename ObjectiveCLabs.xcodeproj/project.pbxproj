@@ -15,6 +15,11 @@
 		BA0F28572227419300890ECA /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0F28562227419300890ECA /* InputHandler.m */; };
 		BA0F285A222741B900890ECA /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0F2859222741B900890ECA /* ScoreKeeper.m */; };
 		BA0F285D2227579500890ECA /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0F285C2227579500890ECA /* QuestionManager.m */; };
+		BA253761222F4AC00080826F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA253760222F4AC00080826F /* main.m */; };
+		BA253767222F4D3D0080826F /* PaymentGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = BA253766222F4D3D0080826F /* PaymentGateway.m */; };
+		BA25376A222F4E4A0080826F /* PaypalPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = BA253769222F4E4A0080826F /* PaypalPaymentService.m */; };
+		BA25376D222F4E5F0080826F /* StripePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = BA25376C222F4E5F0080826F /* StripePaymentService.m */; };
+		BA253770222F4E6B0080826F /* AmazonPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = BA25376F222F4E6B0080826F /* AmazonPaymentService.m */; };
 		BA51AD6C2224AAED006BC4EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA51AD6B2224AAED006BC4EA /* main.m */; };
 		BA51AD722224B2CE006BC4EA /* Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA51AD712224B2CE006BC4EA /* Functions.m */; };
 		BA6905E0222DD43400FAB81F /* FoodTruck.m in Sources */ = {isa = PBXBuildFile; fileRef = BA6905DF222DD43400FAB81F /* FoodTruck.m */; };
@@ -36,16 +41,6 @@
 		BAE26FA022285F4B00F7613E /* QuestionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE26F9F22285F4B00F7613E /* QuestionFactory.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		BA6905F2222DE33D00FAB81F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BA6905E7222DE33D00FAB81F /* PizzaRestaurant.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6001EC7D197B4EC300F97011;
-			remoteInfo = PizzaRestaurant;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		BA089E842220AAE40054F440 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -66,6 +61,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		BA0F28492227412600890ECA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		BA25375C222F4AC00080826F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -138,6 +142,16 @@
 		BA0F2859222741B900890ECA /* ScoreKeeper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeper.m; sourceTree = "<group>"; };
 		BA0F285B2227579500890ECA /* QuestionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionManager.h; sourceTree = "<group>"; };
 		BA0F285C2227579500890ECA /* QuestionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionManager.m; sourceTree = "<group>"; };
+		BA25375E222F4AC00080826F /* Lab10 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab10; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA253760222F4AC00080826F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA253765222F4D3D0080826F /* PaymentGateway.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentGateway.h; sourceTree = "<group>"; };
+		BA253766222F4D3D0080826F /* PaymentGateway.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentGateway.m; sourceTree = "<group>"; };
+		BA253768222F4E4A0080826F /* PaypalPaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaypalPaymentService.h; sourceTree = "<group>"; };
+		BA253769222F4E4A0080826F /* PaypalPaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaypalPaymentService.m; sourceTree = "<group>"; };
+		BA25376B222F4E5F0080826F /* StripePaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StripePaymentService.h; sourceTree = "<group>"; };
+		BA25376C222F4E5F0080826F /* StripePaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StripePaymentService.m; sourceTree = "<group>"; };
+		BA25376E222F4E6B0080826F /* AmazonPaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmazonPaymentService.h; sourceTree = "<group>"; };
+		BA25376F222F4E6B0080826F /* AmazonPaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmazonPaymentService.m; sourceTree = "<group>"; };
 		BA51AD692224AAED006BC4EA /* Lab1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab1; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA51AD6B2224AAED006BC4EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BA51AD702224B2CE006BC4EA /* Functions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Functions.h; sourceTree = "<group>"; };
@@ -148,13 +162,6 @@
 		BA6905E1222DD4D200FAB81F /* Cook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cook.h; sourceTree = "<group>"; };
 		BA6905E2222DD4D200FAB81F /* Cook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cook.m; sourceTree = "<group>"; };
 		BA6905E4222DD66600FAB81F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "iOS-Delegates-1-FoodTruck-master/Foodtruck/main.m"; sourceTree = SOURCE_ROOT; };
-		BA6905E7222DE33D00FAB81F /* PizzaRestaurant.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = PizzaRestaurant.xcodeproj; sourceTree = "<group>"; };
-		BA6905EB222DE33D00FAB81F /* Pizza.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pizza.m; sourceTree = "<group>"; };
-		BA6905EC222DE33D00FAB81F /* Kitchen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kitchen.m; sourceTree = "<group>"; };
-		BA6905ED222DE33D00FAB81F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BA6905EE222DE33D00FAB81F /* Pizza.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pizza.h; sourceTree = "<group>"; };
-		BA6905EF222DE33D00FAB81F /* Kitchen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kitchen.h; sourceTree = "<group>"; };
-		BA6905F0222DE33D00FAB81F /* PizzaRestaurant-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PizzaRestaurant-Prefix.pch"; sourceTree = "<group>"; };
 		BA6B3AED22288589001CA508 /* Threelow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Threelow; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6B3AEF22288589001CA508 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BA6B3AF422288A31001CA508 /* Dice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
@@ -201,6 +208,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BA0F28482227412600890ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA25375B222F4AC00080826F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,7 +270,7 @@
 				BA0F284C2227412600890ECA /* Lab5 */,
 				BA6B3AEE22288589001CA508 /* Threelow */,
 				BA6905D8222DCDE600FAB81F /* Lab9 */,
-				BA6905E6222DE33D00FAB81F /* iOS-Student-PizzaRestaurant-master */,
+				BA25375F222F4AC00080826F /* Lab10 */,
 				BA089E872220AAE40054F440 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -272,6 +286,7 @@
 				BA0F284B2227412600890ECA /* Lab5 */,
 				BA6B3AED22288589001CA508 /* Threelow */,
 				BA6905D7222DCDE600FAB81F /* Lab9 */,
+				BA25375E222F4AC00080826F /* Lab10 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -320,6 +335,22 @@
 			path = Lab5;
 			sourceTree = "<group>";
 		};
+		BA25375F222F4AC00080826F /* Lab10 */ = {
+			isa = PBXGroup;
+			children = (
+				BA253760222F4AC00080826F /* main.m */,
+				BA253765222F4D3D0080826F /* PaymentGateway.h */,
+				BA253766222F4D3D0080826F /* PaymentGateway.m */,
+				BA253768222F4E4A0080826F /* PaypalPaymentService.h */,
+				BA253769222F4E4A0080826F /* PaypalPaymentService.m */,
+				BA25376B222F4E5F0080826F /* StripePaymentService.h */,
+				BA25376C222F4E5F0080826F /* StripePaymentService.m */,
+				BA25376E222F4E6B0080826F /* AmazonPaymentService.h */,
+				BA25376F222F4E6B0080826F /* AmazonPaymentService.m */,
+			);
+			path = Lab10;
+			sourceTree = "<group>";
+		};
 		BA51AD6A2224AAED006BC4EA /* Lab1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -340,36 +371,6 @@
 				BA6905E2222DD4D200FAB81F /* Cook.m */,
 			);
 			path = Lab9;
-			sourceTree = "<group>";
-		};
-		BA6905E6222DE33D00FAB81F /* iOS-Student-PizzaRestaurant-master */ = {
-			isa = PBXGroup;
-			children = (
-				BA6905E7222DE33D00FAB81F /* PizzaRestaurant.xcodeproj */,
-				BA6905EA222DE33D00FAB81F /* PizzaRestaurant */,
-			);
-			path = "iOS-Student-PizzaRestaurant-master";
-			sourceTree = SOURCE_ROOT;
-		};
-		BA6905E8222DE33D00FAB81F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BA6905F3222DE33D00FAB81F /* PizzaRestaurant */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BA6905EA222DE33D00FAB81F /* PizzaRestaurant */ = {
-			isa = PBXGroup;
-			children = (
-				BA6905EB222DE33D00FAB81F /* Pizza.m */,
-				BA6905EC222DE33D00FAB81F /* Kitchen.m */,
-				BA6905ED222DE33D00FAB81F /* main.m */,
-				BA6905EE222DE33D00FAB81F /* Pizza.h */,
-				BA6905EF222DE33D00FAB81F /* Kitchen.h */,
-				BA6905F0222DE33D00FAB81F /* PizzaRestaurant-Prefix.pch */,
-			);
-			path = PizzaRestaurant;
 			sourceTree = "<group>";
 		};
 		BA6B3AEE22288589001CA508 /* Threelow */ = {
@@ -460,6 +461,23 @@
 			name = Lab5;
 			productName = Lab5;
 			productReference = BA0F284B2227412600890ECA /* Lab5 */;
+			productType = "com.apple.product-type.tool";
+		};
+		BA25375D222F4AC00080826F /* Lab10 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA253764222F4AC00080826F /* Build configuration list for PBXNativeTarget "Lab10" */;
+			buildPhases = (
+				BA25375A222F4AC00080826F /* Sources */,
+				BA25375B222F4AC00080826F /* Frameworks */,
+				BA25375C222F4AC00080826F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lab10;
+			productName = Lab10;
+			productReference = BA25375E222F4AC00080826F /* Lab10 */;
 			productType = "com.apple.product-type.tool";
 		};
 		BA51AD682224AAED006BC4EA /* Lab1 */ = {
@@ -565,6 +583,9 @@
 					BA0F284A2227412600890ECA = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					BA25375D222F4AC00080826F = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					BA51AD682224AAED006BC4EA = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -592,12 +613,6 @@
 			mainGroup = BA089E7D2220AAE40054F440;
 			productRefGroup = BA089E872220AAE40054F440 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = BA6905E8222DE33D00FAB81F /* Products */;
-					ProjectRef = BA6905E7222DE33D00FAB81F /* PizzaRestaurant.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				BA089E852220AAE40054F440 /* ObjectiveCLabs */,
@@ -608,19 +623,10 @@
 				BA0F284A2227412600890ECA /* Lab5 */,
 				BA6B3AEC22288589001CA508 /* Threelow */,
 				BA6905D6222DCDE600FAB81F /* Lab9 */,
+				BA25375D222F4AC00080826F /* Lab10 */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		BA6905F3222DE33D00FAB81F /* PizzaRestaurant */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = PizzaRestaurant;
-			remoteRef = BA6905F2222DE33D00FAB81F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA089E822220AAE40054F440 /* Sources */ = {
@@ -654,6 +660,18 @@
 				BA0F28572227419300890ECA /* InputHandler.m in Sources */,
 				BAE26FA022285F4B00F7613E /* QuestionFactory.m in Sources */,
 				BA0F28542227416D00890ECA /* Question.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA25375A222F4AC00080826F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA253761222F4AC00080826F /* main.m in Sources */,
+				BA253770222F4E6B0080826F /* AmazonPaymentService.m in Sources */,
+				BA253767222F4D3D0080826F /* PaymentGateway.m in Sources */,
+				BA25376A222F4E4A0080826F /* PaypalPaymentService.m in Sources */,
+				BA25376D222F4E5F0080826F /* StripePaymentService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -878,6 +896,24 @@
 			};
 			name = Release;
 		};
+		BA253762222F4AC00080826F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NTBX6B6L7U;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BA253763222F4AC00080826F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NTBX6B6L7U;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		BA51AD6E2224AAED006BC4EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1003,6 +1039,15 @@
 			buildConfigurations = (
 				BA0F284F2227412600890ECA /* Debug */,
 				BA0F28502227412600890ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA253764222F4AC00080826F /* Build configuration list for PBXNativeTarget "Lab10" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA253762222F4AC00080826F /* Debug */,
+				BA253763222F4AC00080826F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

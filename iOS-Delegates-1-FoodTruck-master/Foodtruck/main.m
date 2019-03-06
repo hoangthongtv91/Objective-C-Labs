@@ -19,7 +19,7 @@ int main(int argc, const char * argv[]) {
         // create instances of your delegate class
         // set truckA and truckB's delegate to your new instance.
         Cook *cook = [Cook new];
-        truckA.delegate = cook;
+        truckB.delegate = cook;
         
         [truckA serve:10];
         [truckB serve:5];

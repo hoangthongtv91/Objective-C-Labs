@@ -10,33 +10,55 @@
 
 #import "Kitchen.h"
 #import "Pizza.h"
-
+#import "Manager1.h"
+#import "Manager2.h"
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        
-        NSLog(@"\nPlease pick your pizza size and toppings:");
-        
         Kitchen *restaurantKitchen = [Kitchen new];
+        Manager1 *manager1 = [Manager1 new];
+        Manager2 *manager2 = [Manager2 new];
+        DeliveryService *service = [DeliveryService new];
         
+    
         while (TRUE) {
-            NSLog(@"\n> ");
+            NSLog(@"\nPlease pick your manager:");
             char str[100];
             fgets (str, 100, stdin);
             
-            NSString *inputString = [[NSString alloc] initWithUTF8String:str];
-            inputString = [inputString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+            NSString *input = [[NSString alloc] initWithUTF8String:str];
+            input = [input stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
             
-            NSLog(@"Input was %@", inputString);
+            if ([input isEqualToString:@"manager1"]) {
+                restaurantKitchen.delegate = manager1;
+            }
+            if ([input isEqualToString:@"manager2"]){
+                restaurantKitchen.delegate = manager2;
+            }
+            if ([input isEqualToString:@"no manager"]){
+                restaurantKitchen.delegate = nil;
+            }
+            NSLog(@"Please pick your pizza size and toppings:");
+            NSLog(@"\n> ");
+            
+            char strl[100];
+            fgets (strl, 100, stdin);
+            
+            NSString *inputString = [[NSString alloc] initWithUTF8String:strl];
+            inputString = [inputString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+            Pizza *pizza = [Pizza new];
             if ([inputString isEqualToString:@"pepperoni"] || [inputString isEqualToString:@"meatlover"]) {
-                Pizza *pizza = [restaurantKitchen makePizzaWithCombination:inputString];
-                NSLog(@"\nHERE YOU GO:\nPizza with size is: %@, and toppings is: %@",[pizza sizeInWord], [pizza toppings]);
+                pizza = [restaurantKitchen makePizzaWithCombination:inputString];
             }else{
                 NSArray *commandWords = [inputString componentsSeparatedByString:@" "];
                 NSArray *toppingsArray = [commandWords subarrayWithRange:NSMakeRange(1, ([commandWords count] - 1))];
-                Pizza *pizza = [restaurantKitchen makePizzaWithSize:[Pizza sizeFromString:[commandWords objectAtIndex:0]] toppings:toppingsArray];
-                NSLog(@"\nHERE YOU GO:\nPizza with size is: %@, and toppings is: %@",[pizza sizeInWord], [pizza toppings]);
+                pizza = [restaurantKitchen makePizzaWithSize:[Pizza sizeFromString:[commandWords objectAtIndex:0]] toppings:toppingsArray];
+            }
+            NSLog(@"\nHERE YOU GO:\nPizza with size is: %@, and toppings is: %@",[pizza sizeInWord], [pizza toppings]);
+            NSLog(@"%@",[service descriptionOfDeliveredPizza:pizza]);
+            if ([restaurantKitchen.delegate respondsToSelector:@selector(kitchenDidMakePizza:)]) {
+                [restaurantKitchen.delegate kitchenDidMakePizza:pizza];
             }
             
         }
